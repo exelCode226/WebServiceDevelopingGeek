@@ -2,11 +2,492 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: #202020;
-  color: white;
+
+.botonesPedidos1{
+  margin: 0px 33%;
 }
 
-.content-container {
-  height: calc(100vh - theme("spacing.20"));
+
+.botonesTermiProgra{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+
+.productos-container {
+  display: flex;
+  flex-wrap: wrap; /* Esto permitirá que los productos se envuelvan en filas si hay muchos */
+  gap: 20px; /* Espacio entre productos */
+  justify-content: center;
+}
+
+.productosDIV{
+  box-shadow: 0px 0px 10px black;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.divSeleccionPedidoInProgramacion{
+  box-shadow: 0px 0px 10px black;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  margin: 0px 30% auto;
+}
+
+
+.buttonsFormPedidos{
+  margin: 0px 35%;
+}
+
+.separaPrograForm{
+  margin: 5% 0px;
+}
+
+.selectPedidos{
+  margin: 1% 0px;
+}
+
+.labelFormPedidos{
+  margin: 0 13%;
+}
+
+
+
+.buscar-pagina {
+  margin: 8px 0px;
+}
+
+
+.agregarInPage {
+  border: 1px solid rgba(0, 0, 0, 0.557);
+  padding: 0.45em;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: black;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.agregarInPage:hover {
+  background-color: #007bff;
+  color: black;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.541);
+}
+
+
+.nav-item {
+  margin: 27px 0px;
+}
+
+.separadorForms {
+  margin: 0px 4px;
+}
+
+
+
+.borderTextarea {
+  border: 1px solid black;
+}
+
+
+.divAddText {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.tituModusAgre {
+  margin: 3px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* Establece el grosor del texto en negrita */
+}
+
+.tituModus {
+  font-size: 26px;
+  font-weight: bold;
+  /* Establece el grosor del texto en negrita */
+}
+
+.botonAgregar {
+  background-color: #007bff;
+  /* Color de fondo azul */
+  color: #fff;
+  /* Color de texto blanco */
+  border: none;
+  /* Elimina el borde */
+  padding: 10px 20px;
+  /* Ajusta el relleno según sea necesario */
+  border-radius: 4px;
+  /* Agrega bordes redondeados */
+  transition: background-color 0.3s ease;
+  /* Efecto de transición suave para el color de fondo */
+}
+
+.buscadorYboton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchAndPagination {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.botonAgregar {
+  flex: 0;
+  /* Evita que el botón de agregar crezca */
+}
+
+.asidecss {
+  background-color: #101010;
+  /* Fija el aside en su lugar */
+}
+
+.scrollable-content {
+  height: 48px;
+  /* Altura máxima del campo de texto */
+  overflow: auto;
+  /* Agrega una barra de desplazamiento si es necesario */
+}
+
+.scrollDashBoard {
+  height: 530px;
+  /* Altura máxima del campo de texto */
+  overflow: auto;
+  /* Agrega una barra de desplazamiento si es necesario */
+}
+
+.scrollNombreAside{
+  width: 250px;
+  /* Altura máxima del campo de texto */
+  overflow: auto;
+  /* Agrega una barra de desplazamiento si es necesario */
+}
+
+.scrollPageProg {
+  height: 500px;
+  /* Altura máxima del campo de texto */
+  overflow: auto;
+  /* Agrega una barra de desplazamiento si es necesario */
+}
+
+.scrollable-especificaciones {
+  height: 45px;
+  /* Altura máxima del campo de texto */
+  width: 280px;
+  overflow: auto;
+  /* Agrega una barra de desplazamiento si es necesario */
+}
+
+
+
+.divModil{
+  border: solid black 0.5px;
+  border-radius: 6px;
+  margin: 2px 0px;
+  padding: 6px;
+}
+
+
+.cardCenter {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.inputCompenent {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #5a5a5a;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.inputComponent:valid {
+  border-color: #00ff2a;
+  color: #00ff2a;
+  box-shadow: 2px 2px 8px 1px #00ff2a;
+}
+
+.inputComponent:invalid {
+  border-color: #ff0000;
+  color: #ff0000;
+  box-shadow: 2px 2px 8px 1px #ff0000;
+  /* translate: -8px 8px 0px 0px; */
+}
+
+
+.content-wrapper {
+  padding: 9px 14px;
+  background-color: #ffffff00;
+  /* Cambia #ffffff al color deseado */
+}
+
+.completo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.subT{
+  color: #007bff;
+  
+}
+
+.modal-titulo {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 10px;
+  
+}
+
+.listado {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.pdf{
+  display: flex;
+  color: #007bff;
+}
+.pdf1{
+  justify-content: end;
+  margin-left: auto;
+}
+.contenedor-tabla{
+  width: 100%;
+}
+.tablamod {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+  
+}
+.mod{
+  text-align: left;
+}
+.seccion{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 700px;
+}
+.cartapedidos {
+  display: flex;
+  background-color: #ffffff;
+  max-width: 50rem; /* Ajusta el valor según tus necesidades */
+  width: 100%; /* Para ocupar el ancho completo del contenedor padre */
+  padding: 3rem; /* Ajusta el valor según tus necesidades */
+  border-radius: 0.5rem; /* Ajusta el valor según tus necesidades */
+  box-shadow: 0 8px 12px 12px rgba(0, 0, 0, 0.2), 0 4px 8px -4px rgba(0, 0, 0, 0.12); /* Ajusta el valor según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor en el eje horizontal */
+}
+/* Estilo para flexbox con justificación y alineación en el centro */
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.custom-button {
+  width: 40%;
+  background-color: #ff0000;
+  color: white;
+  padding: 1px 8px;
+  border-radius: 0.375rem;
+  margin-top: 29px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; /* Puedes ajustar el valor según tus necesidades */
+}
+.plane-switch {
+  --dot: #fff;
+  --street: #6B6D76;
+  --street-line: #A8AAB4;
+  --street-line-mid: #C0C2C8;
+  --sky-1: #60A7FA;
+  --sky-2: #2F8EFC;
+  --light-1: rgba(255, 233, 0, 1);
+  --light-2: rgba(255, 233, 0, .3);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.plane-switch input {
+  display: none;
+}
+
+.plane-switch input + div {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 25px;
+  padding: 1px;
+  border-radius: 13px;
+  background: linear-gradient(90deg, var(--street) 0%, var(--street) 25%, var(--sky-1) 75%, var(--sky-2) 100%) left var(--p, 0%) top 0;
+  background-position-x: var(--p, 0%);
+  background-size: 400% auto;
+  transition: background-position 0.6s;
+}
+
+.plane-switch input + div:before, .plane-switch input + div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateX(var(--s, 0));
+  transition: transform 0.3s;
+}
+
+.plane-switch input + div:before {
+  width: 42px;
+  right: 2px;
+  top: 4px;
+  height: 1px;
+  background: var(--street-line);
+  box-shadow: 0 16px 0 0 var(--street-line);
+}
+
+.plane-switch input + div:after {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  left: 23px;
+  top: 1px;
+  -webkit-animation: lights2 2s linear infinite;
+  animation: lights2 2s linear infinite;
+  box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+}
+
+.plane-switch input + div span {
+  display: block;
+  position: absolute;
+}
+
+.plane-switch input + div span.street-middle {
+  top: 12px;
+  left: 21px;
+  width: 3px;
+  height: 1px;
+  transform: translateX(var(--s, 0));
+  background: var(--street-line-mid);
+  box-shadow: 5px 0 0 var(--street-line-mid), 10px 0 0 var(--street-line-mid), 15px 0 0 var(--street-line-mid), 20px 0 0 var(--street-line-mid), 25px 0 0 var(--street-line-mid);
+  transition: transform 0.3s;
+}
+
+.plane-switch input + div span.cloud {
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+  position: absolute;
+  top: var(--ct, 8px);
+  left: 100%;
+  opacity: var(--co, 0);
+  transition: opacity 0.3s;
+  -webkit-animation: clouds2 2s linear infinite var(--cd, 0s);
+  animation: clouds2 2s linear infinite var(--cd, 0s);
+}
+
+.plane-switch input + div span.cloud:before, .plane-switch input + div span.cloud:after {
+  content: "";
+  position: absolute;
+  transform: translateX(var(--cx, 0));
+  border-radius: 50%;
+  width: var(--cs, 5px);
+  height: var(--cs, 5px);
+  background: #fff;
+  bottom: 1px;
+  left: 1px;
+}
+
+.plane-switch input + div span.cloud:after {
+  --cs: 6px;
+  --cx: 4px;
+}
+
+.plane-switch input + div span.cloud.two {
+  --ct: 20px;
+  --cd: 1s;
+  opacity: var(--co-2, 0);
+}
+
+.plane-switch input + div div {
+  display: table;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--dot);
+  transform: translateX(var(--x, 0));
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.35, 1.2);
+}
+
+.plane-switch input + div div svg {
+  width: 13px;
+  height: 13px;
+  display: block;
+  color: var(--c, var(--street));
+  transition: color 0.6s;
+}
+
+.plane-switch input:checked + div {
+  --p: 100%;
+  --x: 25px;
+  --s: -50px;
+  --c: var(--sky-2);
+  --co: .8;
+  --co-2: .6;
+}
+
+@keyframes lights2 {
+  20%, 30% {
+    box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-1), 8px 21px 0 var(--light-1), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+  }
+
+  55%, 65% {
+    box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-1), 16px 21px 0 var(--light-1);
+  }
+
+  90%, 100% {
+    box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+  }
+}
+
+@keyframes clouds2 {
+  97% {
+    transform: translateX(-72px);
+    visibility: visible;
+  }
+
+  98%, 100% {
+    visibility: hidden;
+  }
+
+  99% {
+    transform: translateX(-72px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -1,0 +1,21 @@
+/* Estilos para el contenedor principal */
+.nav-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Estilos para el navside (izquierda) */
+  .sidebar {
+    width: 250px; /* Ancho del navside */
+    background-color: #333; /* Color de fondo del navside */
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Estilos para el contenido de las páginas (derecha) */
+  .content {
+    flex-grow: 1; /* El contenido se expandirá para llenar el espacio restante */
+    padding: 20px;
+    /* Agrega estilos adicionales según tus necesidades */
+  }
+  

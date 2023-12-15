@@ -1,7 +1,8 @@
 export function Button({ onClick, children }) {
   return (
-    <button
-      className="bg-indigo-500 px-4 py-1 rounded-md my-2 disabled:bg-indigo-300"
+    <button 
+    
+      className="btn btn-outline-primary px-4 py-1 rounded-md my-2 mx-auto flex items-center"
       onClick={onClick}
     >
       {children}

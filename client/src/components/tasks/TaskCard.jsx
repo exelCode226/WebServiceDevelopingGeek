@@ -24,6 +24,7 @@ export function TaskCard({ task }) {
             day: "numeric",
           })}
       </p>
+      {/* <p className="text-gray-500 mt-2">Creador: {task.user.documento}</p> */}
     </Card>
   );
 }
