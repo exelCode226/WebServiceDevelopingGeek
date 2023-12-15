@@ -5,7 +5,7 @@ import { createActividad, deleteActividad, getActividad, getActividades, updateA
 
 router.get("/actividades", getActividades)
 router.post("/actividades", createActividad)
-router.get("/actividades/:id",, getActividad)
+router.get("/actividades/:id", getActividad)
 router.delete("/actividades/:id", deleteActividad)
 router.put("/actividades/:id", updateActividad)
 
